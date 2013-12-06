@@ -206,6 +206,11 @@ function Install7Zip () {
   cinst 7zip
   AppendEnvAndGlobalPath "C:\Program Files\7-Zip" "User"
 }
+function InstallSysInternals () {
+  cinst sysinternals
+  AppendEnvAndGlobalPath "C:\bin\sysinternals" "User"
+}
+
 
 function InstallPathed () {
   # Download ZIP file
@@ -235,6 +240,7 @@ InstallPackageManager
 InstallGit
 Install7Zip
 InstallPathed
+InstallSysInternals
 
 
 # Can I mention here how frequently PowerShell violates the principle of least surprise?
